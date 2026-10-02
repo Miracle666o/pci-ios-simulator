@@ -1,0 +1,3 @@
+import {defineConfig} from 'vite';
+import {VitePWA} from 'vite-plugin-pwa';
+export default defineConfig({base:'/pci-ios-simulator/',plugins:[VitePWA({registerType:'autoUpdate',includeAssets:['icon.svg'],manifest:{id:'/pci-ios-simulator/',name:'PCI Lab — Educational Simulator',short_name:'PCI Lab',description:'Touch-first educational PCI simulator.',start_url:'/pci-ios-simulator/',scope:'/pci-ios-simulator/',display:'standalone',orientation:'landscape',background_color:'#06101c',theme_color:'#06101c',icons:[{src:'icon.svg',sizes:'any',type:'image/svg+xml',purpose:'any maskable'}]},workbox:{globPatterns:['**/*.{js,css,html,svg}'],navigateFallback:'/pci-ios-simulator/index.html',cleanupOutdatedCaches:true}})],test:{environment:'node',include:['tests/**/*.test.ts']}});

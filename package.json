@@ -1,0 +1,1 @@
+{"name":"pci-ios-simulator","private":true,"version":"1.0.0","type":"module","scripts":{"dev":"vite --host 0.0.0.0","build":"tsc --noEmit && vite build","test":"vitest run"},"dependencies":{"three":"^0.180.0"},"devDependencies":{"@types/three":"^0.180.0","typescript":"^5.9.2","vite":"^7.1.7","vite-plugin-pwa":"^1.0.3","vitest":"^3.2.4"}}
